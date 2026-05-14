@@ -1,0 +1,40 @@
+# Generated outputs
+outputs/
+dist/
+build/
+
+# Source documents and private inputs
+task/
+task_*/
+case/
+case_*/
+*.pdf
+*.doc
+*.docx
+*.caj
+*.rtf
+*.epub
+
+# WeChat/browser downloaded assets
+*_files/
+*.mhtml
+*.webloc
+
+# Private media and QR assets
+*.png
+*.jpg
+*.jpeg
+*.webp
+!**/assets/README.md
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Python/cache
+__pycache__/
+*.pyc
+.pytest_cache/
