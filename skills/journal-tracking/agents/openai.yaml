@@ -1,0 +1,5 @@
+display_name: 期刊追踪
+short_description: 将2篇及以上论文或期刊期号整理成公众号式期刊追踪稿。
+default_prompt: 使用 $journal-tracking 整理这些论文，输出“期刊追踪丨标题”的微信公众号 HTML 追踪稿。
+
+
