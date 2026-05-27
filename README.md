@@ -1,11 +1,12 @@
 # Codex Academic WeChat Skills
 
-Two Codex skills for academic reading and WeChat-style publication drafts.
+Codex skills for academic reading, journal tracking, and top-journal article monitoring.
 
 - `journal-reading`: deep reading for a single academic paper, report, article, or comparable source.
 - `journal-tracking`: journal issue tracking and multi-paper digest generation for two or more sources.
+- `utd-ft50-journal-tracker`: UTD24/FT50 article tracking with Crossref/OpenAlex/Unpaywall metadata, validation reports, weekly briefs, topic tags, and Zotero BibTeX/RIS export.
 
-The skills are designed for Chinese academic writing workflows, including Markdown notes, HTML reading reports, WeChat copy-ready drafts, Word-ready reports, journal/issue digests, and NotebookLM handoff prompts.
+The skills are designed for Chinese academic writing workflows, including Markdown notes, HTML reading reports, WeChat copy-ready drafts, Word-ready reports, journal/issue digests, NotebookLM handoff prompts, and weekly top-journal monitoring.
 
 ## Repository Layout
 
@@ -23,6 +24,11 @@ skills/
     templates/
     agents/
     assets/
+  utd-ft50-journal-tracker/
+    SKILL.md
+    references/
+    scripts/
+    agents/
 docs/
   notebooklm_journal_reading_source.md
 examples/
@@ -34,7 +40,9 @@ examples/
 
 `journal-tracking` is triggered by two or more sources, such as multiple PDFs, a journal issue page, DOI list, screenshots, abstracts, or an online-first batch. It asks Codex to build a paper inventory, group papers by theme, and generate a phone-friendly journal tracking digest.
 
-Both skills include a rule for quote-based analysis:
+`utd-ft50-journal-tracker` is triggered by requests to set up or operate an automated UTD24/FT50 tracker. It bundles scripts for journal validation, Crossref/OpenAlex/Unpaywall fetching, duplicate checks, field-completeness reports, weekly Markdown reports, Chinese top-journal briefs, OA PDF downloads, and Zotero-compatible BibTeX/RIS exports. It gives special attention to AI, innovation, platforms, digital transformation, China samples, team science, research commercialization, intellectual property, and technology transfer.
+
+The reading/tracking writing skills include a rule for quote-based analysis:
 
 - single source: at least five short original excerpts with analysis;
 - multiple sources: at least two short original excerpts per source with analysis;
@@ -42,7 +50,7 @@ Both skills include a rule for quote-based analysis:
 
 ## Installation
 
-Copy either skill folder into your Codex skills directory.
+Copy any skill folder into your Codex skills directory.
 
 Example:
 
@@ -50,6 +58,7 @@ Example:
 <codex-skills-dir>/
   journal-reading/
   journal-tracking/
+  utd-ft50-journal-tracker/
 ```
 
 Then restart or refresh Codex so the skills are discovered.
@@ -75,6 +84,7 @@ This public package intentionally excludes:
 
 - real PDF files;
 - generated reports and WeChat drafts;
+- generated tracker outputs and downloaded PDFs;
 - real QR images;
 - downloaded WeChat article caches;
 - local absolute paths;

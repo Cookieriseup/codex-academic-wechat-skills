@@ -1,0 +1,472 @@
+# Seed list for UTD24 and Financial Times FT50 journal tracking.
+# FT50 flags follow the 2026 Financial Times update: Academy of Management Annals,
+# American Sociological Review, and Psychological Science are included; Human Relations,
+# Journal of Business Ethics, and Organization Studies are retained as optional watchlist
+# journals but are not marked as FT50.
+# Extra non-UTD/FT journals can remain in this file for optional monitoring, but
+# scripts/update_articles.py tracks only the UTD24/FT50 union by default.
+journals:
+- journal_name: Academy of Management Annals
+  issn: 1941-6520
+  eissn: 1941-6067
+  publisher: Academy of Management
+  utd24: false
+  ft50: true
+  homepage_url: https://journals.aom.org/journal/annals
+  source_url: https://journals.aom.org/action/showFeed?type=etoc&feed=rss&jc=annals
+- journal_name: Academy of Management Journal
+  issn: 0001-4273
+  eissn: 1948-0989
+  publisher: Academy of Management
+  utd24: true
+  ft50: true
+  homepage_url: https://journals.aom.org/journal/amj
+  source_url: https://journals.aom.org/action/showFeed?type=etoc&feed=rss&jc=amj
+- journal_name: Academy of Management Review
+  issn: 0363-7425
+  eissn: 1930-3807
+  publisher: Academy of Management
+  utd24: true
+  ft50: true
+  homepage_url: https://journals.aom.org/journal/amr
+  source_url: https://journals.aom.org/action/showFeed?type=etoc&feed=rss&jc=amr
+- journal_name: Accounting, Organizations and Society
+  issn: 0361-3682
+  eissn: 1873-6289
+  publisher: Elsevier
+  utd24: false
+  ft50: true
+  homepage_url: https://www.sciencedirect.com/journal/accounting-organizations-and-society
+  source_url: https://www.sciencedirect.com/journal/accounting-organizations-and-society
+- journal_name: The Accounting Review
+  issn: 0001-4826
+  eissn: 1558-7967
+  publisher: American Accounting Association
+  utd24: true
+  ft50: true
+  homepage_url: https://publications.aaahq.org/accounting-review
+  source_url: https://publications.aaahq.org/accounting-review/issue
+- journal_name: Administrative Science Quarterly
+  issn: 0001-8392
+  eissn: 1930-3815
+  publisher: SAGE
+  utd24: true
+  ft50: true
+  homepage_url: https://journals.sagepub.com/home/asq
+  source_url: https://journals.sagepub.com/action/showFeed?type=etoc&feed=rss&jc=asq
+- journal_name: American Economic Review
+  issn: 0002-8282
+  eissn: 1944-7981
+  publisher: American Economic Association
+  utd24: false
+  ft50: true
+  homepage_url: https://www.aeaweb.org/journals/aer
+  source_url: https://www.aeaweb.org/journals/aer/rss
+- journal_name: American Sociological Review
+  issn: 0003-1224
+  eissn: 1939-8271
+  publisher: SAGE
+  utd24: false
+  ft50: true
+  homepage_url: https://journals.sagepub.com/home/asr
+  source_url: https://journals.sagepub.com/action/showFeed?type=etoc&feed=rss&jc=asr
+- journal_name: Contemporary Accounting Research
+  issn: 0823-9150
+  eissn: 1911-3846
+  publisher: Wiley
+  utd24: false
+  ft50: true
+  homepage_url: https://onlinelibrary.wiley.com/journal/19113846
+  source_url: https://onlinelibrary.wiley.com/action/showFeed?jc=19113846&type=etoc&feed=rss
+- journal_name: Econometrica
+  issn: 0012-9682
+  eissn: 1468-0262
+  publisher: Wiley
+  utd24: false
+  ft50: true
+  homepage_url: https://onlinelibrary.wiley.com/journal/14680262
+  source_url: https://onlinelibrary.wiley.com/action/showFeed?jc=14680262&type=etoc&feed=rss
+- journal_name: Entrepreneurship Theory and Practice
+  issn: 1042-2587
+  eissn: 1540-6520
+  publisher: SAGE
+  utd24: false
+  ft50: true
+  homepage_url: https://journals.sagepub.com/home/etp
+  source_url: https://journals.sagepub.com/action/showFeed?type=etoc&feed=rss&jc=etp
+- journal_name: Human Resource Management
+  issn: 0090-4848
+  eissn: 1099-050X
+  publisher: Wiley
+  utd24: false
+  ft50: true
+  homepage_url: https://onlinelibrary.wiley.com/journal/1099050x
+  source_url: https://onlinelibrary.wiley.com/action/showFeed?jc=1099050x&type=etoc&feed=rss
+- journal_name: Human Relations
+  issn: 0018-7267
+  eissn: 1741-282X
+  publisher: SAGE
+  utd24: false
+  ft50: false
+  homepage_url: https://journals.sagepub.com/home/hum
+  source_url: https://journals.sagepub.com/action/showFeed?type=etoc&feed=rss&jc=hum
+- journal_name: Harvard Business Review
+  issn: 0017-8012
+  eissn: 2168-0656
+  publisher: Harvard Business Publishing
+  utd24: false
+  ft50: true
+  homepage_url: https://hbr.org/
+  source_url: https://hbr.org/rss
+- journal_name: Information Systems Research
+  issn: 1047-7047
+  eissn: 1526-5536
+  publisher: INFORMS
+  utd24: true
+  ft50: true
+  homepage_url: https://pubsonline.informs.org/journal/isre
+  source_url: https://pubsonline.informs.org/action/showFeed?type=etoc&feed=rss&jc=isre
+- journal_name: INFORMS Journal on Computing
+  issn: 1091-9856
+  eissn: 1526-5528
+  publisher: INFORMS
+  utd24: true
+  ft50: false
+  homepage_url: https://pubsonline.informs.org/journal/ijoc
+  source_url: https://pubsonline.informs.org/action/showFeed?type=etoc&feed=rss&jc=ijoc
+- journal_name: Journal of Accounting and Economics
+  issn: 0165-4101
+  eissn: 1879-1980
+  publisher: Elsevier
+  utd24: true
+  ft50: true
+  homepage_url: https://www.sciencedirect.com/journal/journal-of-accounting-and-economics
+  source_url: https://www.sciencedirect.com/journal/journal-of-accounting-and-economics
+- journal_name: Journal of Accounting Research
+  issn: 0021-8456
+  eissn: 1475-679X
+  publisher: Wiley
+  utd24: true
+  ft50: true
+  homepage_url: https://onlinelibrary.wiley.com/journal/1475679x
+  source_url: https://onlinelibrary.wiley.com/action/showFeed?jc=1475679x&type=etoc&feed=rss
+- journal_name: Journal of Applied Psychology
+  issn: 0021-9010
+  eissn: 1939-1854
+  publisher: American Psychological Association
+  utd24: false
+  ft50: true
+  homepage_url: https://www.apa.org/pubs/journals/apl
+  source_url: https://content.apa.org/journals/apl.rss
+- journal_name: Journal of Business Venturing
+  issn: 0883-9026
+  eissn: 1873-2003
+  publisher: Elsevier
+  utd24: false
+  ft50: true
+  homepage_url: https://www.sciencedirect.com/journal/journal-of-business-venturing
+  source_url: https://www.sciencedirect.com/journal/journal-of-business-venturing
+- journal_name: Journal of Business Ethics
+  issn: 0167-4544
+  eissn: 1573-0697
+  publisher: Springer
+  utd24: false
+  ft50: false
+  homepage_url: https://link.springer.com/journal/10551
+  source_url: https://link.springer.com/search.rss?facet-content-type=Article&facet-journal-id=10551
+- journal_name: Journal of Consumer Psychology
+  issn: 1057-7408
+  eissn: 1532-7663
+  publisher: Wiley
+  utd24: false
+  ft50: true
+  homepage_url: https://onlinelibrary.wiley.com/journal/15327663
+  source_url: https://onlinelibrary.wiley.com/action/showFeed?jc=15327663&type=etoc&feed=rss
+- journal_name: Journal of Consumer Research
+  issn: 0093-5301
+  eissn: 1537-5277
+  publisher: Oxford University Press
+  utd24: true
+  ft50: true
+  homepage_url: https://academic.oup.com/jcr
+  source_url: https://academic.oup.com/rss/site_5277/advanceAccess_3019.xml
+- journal_name: Journal of Finance
+  issn: 0022-1082
+  eissn: 1540-6261
+  publisher: Wiley
+  utd24: true
+  ft50: true
+  homepage_url: https://onlinelibrary.wiley.com/journal/15406261
+  source_url: https://onlinelibrary.wiley.com/action/showFeed?jc=15406261&type=etoc&feed=rss
+- journal_name: Journal of Financial and Quantitative Analysis
+  issn: 0022-1090
+  eissn: 1756-6916
+  publisher: Cambridge University Press
+  utd24: false
+  ft50: true
+  homepage_url: https://www.cambridge.org/core/journals/journal-of-financial-and-quantitative-analysis
+  source_url: https://www.cambridge.org/core/rss/product/id/557B3DCC71BD7ED48A7FA7C1064DD86A
+- journal_name: Journal of Financial Economics
+  issn: 0304-405X
+  eissn: 1879-2774
+  publisher: Elsevier
+  utd24: true
+  ft50: true
+  homepage_url: https://www.sciencedirect.com/journal/journal-of-financial-economics
+  source_url: https://www.sciencedirect.com/journal/journal-of-financial-economics
+- journal_name: Journal of International Business Studies
+  issn: 0047-2506
+  eissn: 1478-6990
+  publisher: Springer Nature
+  utd24: true
+  ft50: true
+  homepage_url: https://link.springer.com/journal/41267
+  source_url: https://link.springer.com/search.rss?facet-content-type=Article&facet-journal-id=41267
+- journal_name: Journal of Management
+  issn: 0149-2063
+  eissn: 1557-1211
+  publisher: SAGE
+  utd24: false
+  ft50: true
+  homepage_url: https://journals.sagepub.com/home/jom
+  source_url: https://journals.sagepub.com/action/showFeed?type=etoc&feed=rss&jc=jom
+- journal_name: Journal of Management Information Systems
+  issn: 0742-1222
+  eissn: 1557-928X
+  publisher: Taylor & Francis
+  utd24: false
+  ft50: true
+  homepage_url: https://www.tandfonline.com/journals/mmis20
+  source_url: https://www.tandfonline.com/action/showFeed?type=etoc&feed=rss&jc=mmis20
+- journal_name: Journal of Management Studies
+  issn: 0022-2380
+  eissn: 1467-6486
+  publisher: Wiley
+  utd24: false
+  ft50: true
+  homepage_url: https://onlinelibrary.wiley.com/journal/14676486
+  source_url: https://onlinelibrary.wiley.com/action/showFeed?jc=14676486&type=etoc&feed=rss
+- journal_name: Journal of Marketing
+  issn: 0022-2429
+  eissn: 1547-7185
+  publisher: American Marketing Association
+  utd24: true
+  ft50: true
+  homepage_url: https://www.ama.org/journal-of-marketing/
+  source_url: https://journals.sagepub.com/action/showFeed?type=etoc&feed=rss&jc=jmx
+- journal_name: Journal of Marketing Research
+  issn: 0022-2437
+  eissn: 1547-7193
+  publisher: American Marketing Association
+  utd24: true
+  ft50: true
+  homepage_url: https://www.ama.org/journal-of-marketing-research/
+  source_url: https://journals.sagepub.com/action/showFeed?type=etoc&feed=rss&jc=mrj
+- journal_name: Journal of Operations Management
+  issn: 0272-6963
+  eissn: 1873-1317
+  publisher: Wiley
+  utd24: true
+  ft50: true
+  homepage_url: https://onlinelibrary.wiley.com/journal/18731317
+  source_url: https://onlinelibrary.wiley.com/action/showFeed?jc=18731317&type=etoc&feed=rss
+- journal_name: Journal of Organizational Behavior
+  issn: 0894-3796
+  eissn: 1099-1379
+  publisher: Wiley
+  utd24: false
+  ft50: false
+  homepage_url: https://onlinelibrary.wiley.com/journal/10991379
+  source_url: https://onlinelibrary.wiley.com/action/showFeed?jc=10991379&type=etoc&feed=rss
+- journal_name: Journal of Political Economy
+  issn: 0022-3808
+  eissn: 1537-534X
+  publisher: University of Chicago Press
+  utd24: false
+  ft50: true
+  homepage_url: https://www.journals.uchicago.edu/journals/jpe
+  source_url: https://www.journals.uchicago.edu/action/showFeed?type=etoc&feed=rss&jc=jpe
+- journal_name: Journal of Retailing
+  issn: 0022-4359
+  eissn: 1873-3271
+  publisher: Elsevier
+  utd24: false
+  ft50: false
+  homepage_url: https://www.sciencedirect.com/journal/journal-of-retailing
+  source_url: https://www.sciencedirect.com/journal/journal-of-retailing
+- journal_name: The Leadership Quarterly
+  issn: 1048-9843
+  eissn: 1873-3409
+  publisher: Elsevier
+  utd24: false
+  ft50: false
+  homepage_url: https://www.sciencedirect.com/journal/the-leadership-quarterly
+  source_url: https://www.sciencedirect.com/journal/the-leadership-quarterly
+- journal_name: Management Science
+  issn: 0025-1909
+  eissn: 1526-5501
+  publisher: INFORMS
+  utd24: true
+  ft50: true
+  homepage_url: https://pubsonline.informs.org/journal/mnsc
+  source_url: https://pubsonline.informs.org/action/showFeed?type=etoc&feed=rss&jc=mnsc
+- journal_name: Manufacturing and Service Operations Management
+  issn: 1523-4614
+  eissn: 1526-5498
+  publisher: INFORMS
+  utd24: true
+  ft50: true
+  homepage_url: https://pubsonline.informs.org/journal/msom
+  source_url: https://pubsonline.informs.org/action/showFeed?type=etoc&feed=rss&jc=msom
+- journal_name: Marketing Science
+  issn: 0732-2399
+  eissn: 1526-548X
+  publisher: INFORMS
+  utd24: true
+  ft50: true
+  homepage_url: https://pubsonline.informs.org/journal/mksc
+  source_url: https://pubsonline.informs.org/action/showFeed?type=etoc&feed=rss&jc=mksc
+- journal_name: MIS Quarterly
+  issn: 0276-7783
+  eissn: 2162-9730
+  publisher: MIS Quarterly
+  utd24: true
+  ft50: true
+  homepage_url: https://misq.umn.edu/
+  source_url: https://misq.umn.edu/contents
+- journal_name: Operations Research
+  issn: 0030-364X
+  eissn: 1526-5463
+  publisher: INFORMS
+  utd24: true
+  ft50: true
+  homepage_url: https://pubsonline.informs.org/journal/opre
+  source_url: https://pubsonline.informs.org/action/showFeed?type=etoc&feed=rss&jc=opre
+- journal_name: Organization Science
+  issn: 1047-7039
+  eissn: 1526-5455
+  publisher: INFORMS
+  utd24: true
+  ft50: true
+  homepage_url: https://pubsonline.informs.org/journal/orsc
+  source_url: https://pubsonline.informs.org/action/showFeed?type=etoc&feed=rss&jc=orsc
+- journal_name: Organizational Behavior and Human Decision Processes
+  issn: 0749-5978
+  eissn: 1095-9920
+  publisher: Elsevier
+  utd24: false
+  ft50: true
+  homepage_url: https://www.sciencedirect.com/journal/organizational-behavior-and-human-decision-processes
+  source_url: https://www.sciencedirect.com/journal/organizational-behavior-and-human-decision-processes
+- journal_name: Organization Studies
+  issn: 0170-8406
+  eissn: 1741-3044
+  publisher: SAGE
+  utd24: false
+  ft50: false
+  homepage_url: https://journals.sagepub.com/home/oss
+  source_url: https://journals.sagepub.com/action/showFeed?type=etoc&feed=rss&jc=oss
+- journal_name: Personnel Psychology
+  issn: 0031-5826
+  eissn: 1744-6570
+  publisher: Wiley
+  utd24: false
+  ft50: false
+  homepage_url: https://onlinelibrary.wiley.com/journal/17446570
+  source_url: https://onlinelibrary.wiley.com/action/showFeed?jc=17446570&type=etoc&feed=rss
+- journal_name: Production and Operations Management
+  issn: 1059-1478
+  eissn: 1937-5956
+  publisher: SAGE
+  utd24: true
+  ft50: true
+  homepage_url: https://journals.sagepub.com/home/pao
+  source_url: https://journals.sagepub.com/action/showFeed?type=etoc&feed=rss&jc=pao
+- journal_name: Quarterly Journal of Economics
+  issn: 0033-5533
+  eissn: 1531-4650
+  publisher: Oxford University Press
+  utd24: false
+  ft50: true
+  homepage_url: https://academic.oup.com/qje
+  source_url: https://academic.oup.com/rss/site_5250/advanceAccess_3037.xml
+- journal_name: Review of Accounting Studies
+  issn: 1380-6653
+  eissn: 1573-7136
+  publisher: Springer
+  utd24: false
+  ft50: true
+  homepage_url: https://link.springer.com/journal/11142
+  source_url: https://link.springer.com/search.rss?facet-content-type=Article&facet-journal-id=11142
+- journal_name: Review of Economic Studies
+  issn: 0034-6527
+  eissn: 1467-937X
+  publisher: Oxford University Press
+  utd24: false
+  ft50: true
+  homepage_url: https://academic.oup.com/restud
+  source_url: https://academic.oup.com/rss/site_5273/advanceAccess_3040.xml
+- journal_name: Review of Finance
+  issn: 1572-3097
+  eissn: 1573-692X
+  publisher: Oxford University Press
+  utd24: false
+  ft50: true
+  homepage_url: https://academic.oup.com/rof
+  source_url: https://academic.oup.com/rss/site_5245/advanceAccess_3033.xml
+- journal_name: The Review of Financial Studies
+  issn: 0893-9454
+  eissn: 1465-7368
+  publisher: Oxford University Press
+  utd24: true
+  ft50: true
+  homepage_url: https://academic.oup.com/rfs
+  source_url: https://academic.oup.com/rss/site_5244/advanceAccess_3032.xml
+- journal_name: Psychological Science
+  issn: 0956-7976
+  eissn: 1467-9280
+  publisher: SAGE
+  utd24: false
+  ft50: true
+  homepage_url: https://journals.sagepub.com/home/pss
+  source_url: https://journals.sagepub.com/action/showFeed?type=etoc&feed=rss&jc=pss
+- journal_name: Research Policy
+  issn: 0048-7333
+  eissn: 1873-7625
+  publisher: Elsevier
+  utd24: false
+  ft50: true
+  homepage_url: https://www.sciencedirect.com/journal/research-policy
+  source_url: https://www.sciencedirect.com/journal/research-policy
+- journal_name: Journal of the Academy of Marketing Science
+  issn: 0092-0703
+  eissn: 1552-7824
+  publisher: Springer
+  utd24: false
+  ft50: true
+  homepage_url: https://link.springer.com/journal/11747
+  source_url: https://link.springer.com/search.rss?facet-content-type=Article&facet-journal-id=11747
+- journal_name: Sloan Management Review
+  issn: 1532-9194
+  eissn: 1532-9194
+  publisher: MIT Sloan School of Management
+  utd24: false
+  ft50: true
+  homepage_url: https://sloanreview.mit.edu/
+  source_url: https://sloanreview.mit.edu/feed/
+- journal_name: Strategic Entrepreneurship Journal
+  issn: 1932-4391
+  eissn: 1932-443X
+  publisher: Wiley
+  utd24: false
+  ft50: true
+  homepage_url: https://onlinelibrary.wiley.com/journal/1932443x
+  source_url: https://onlinelibrary.wiley.com/action/showFeed?jc=1932443x&type=etoc&feed=rss
+- journal_name: Strategic Management Journal
+  issn: 0143-2095
+  eissn: 1097-0266
+  publisher: Wiley
+  utd24: true
+  ft50: true
+  homepage_url: https://onlinelibrary.wiley.com/journal/10970266
+  source_url: https://onlinelibrary.wiley.com/action/showFeed?jc=10970266&type=etoc&feed=rss

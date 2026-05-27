@@ -1,0 +1,4 @@
+interface:
+  display_name: "UTD/FT50 Journal Tracker"
+  short_description: "Track UTD24 and FT50 journal articles"
+  default_prompt: "Use this skill to set up, validate, update, and summarize a UTD24/FT50 journal tracker with weekly reports and Zotero exports."

@@ -11,6 +11,7 @@ Use this checklist before publishing or pushing the repository.
 - PDF, DOCX, CAJ, RTF, and raw HTML source files from third parties
 - QR code images for real public accounts
 - generated article packages
+- generated tracker outputs, article metadata exports, downloaded PDFs, and local automation logs
 - local browser caches
 - screenshots that expose accounts, paths, names, or private material
 
