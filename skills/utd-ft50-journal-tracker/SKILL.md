@@ -17,7 +17,9 @@ Use this skill to create or operate a local Python project that tracks UTD24 and
 - duplicate and field-completeness reports;
 - weekly Markdown reports and Chinese top-journal tracking briefs;
 - special tagging for team science, research commercialization, intellectual property, and technology transfer;
-- optional OA PDF downloading from already-recorded `pdf_url` values only.
+- optional OA PDF downloading from already-recorded `pdf_url` values only;
+- campus IP institutional downloading with Python proxy inheritance disabled;
+- manual browser download queues and local PDF reconciliation for captcha or institutional-login cases.
 
 ## Project Setup
 
@@ -84,6 +86,31 @@ Download legal OA PDFs that are already listed in outputs:
 python scripts\download_oa_pdfs.py --limit 20
 ```
 
+Check Python network/proxy behavior and campus access:
+
+```powershell
+python scripts\check_network_access.py --doi 10.1287/isre.2023.0561 --access-mode campus_ip
+```
+
+Download institutionally accessible PDFs through campus IP:
+
+```powershell
+python scripts\download_institutional_pdfs.py --access-mode campus_ip --limit 20
+```
+
+If a publisher returns HTML, 401/403, a login page, or a captcha page, export a manual browser queue instead:
+
+```powershell
+python scripts\export_manual_pdf_queue.py
+```
+
+After the user downloads authorized PDFs in a browser, reconcile them locally:
+
+```powershell
+python scripts\reconcile_manual_pdfs.py --pdf-dir "$HOME\Downloads"
+python scripts\reconcile_manual_pdfs.py --pdf-dir "$HOME\Downloads" --copy
+```
+
 ## Outputs
 
 Main outputs:
@@ -109,6 +136,9 @@ Validation outputs:
 - `duplicate_report.md`
 - `outputs/field_completeness_report.xlsx`
 - `outputs/smoke_test_latest_articles.xlsx`
+- `outputs/manual_pdf_download_queue.xlsx`
+- `outputs/manual_pdf_download_queue.csv`
+- `outputs/manual_pdfs/manual_pdf_reconcile_log.csv`
 
 ## Topic and Relevance Rules
 
@@ -137,7 +167,12 @@ Always give special attention to articles involving:
 
 - Do not bypass paywalls.
 - Do not scrape institutional access.
+- For campus IP access, use `requests.Session.trust_env = False` and no proxies so Python does not inherit `HTTP_PROXY`, `HTTPS_PROXY`, or `ALL_PROXY`.
+- If a VPN/TUN adapter controls the default route, `trust_env=False` prevents proxy env inheritance but cannot override the OS route; the user may need VPN split tunneling or to disconnect VPN for true campus-IP downloads.
 - Save or download PDFs only when `pdf_url` is supplied by Unpaywall/OpenAlex or otherwise clearly legal and open access.
+- For institutional downloads, save a file only if the publisher returns an actual PDF. Do not save HTML, login pages, captcha pages, 401, or 403 responses.
+- If human verification, school login, or captcha is required, generate a manual browser download queue. Do not automate or bypass that verification.
+- Reconcile only PDFs the user has manually downloaded through legitimate browser access; never infer that a failed automated download means the article is unavailable.
 - If a record has only title/metadata, do not imply that full text was read.
 - If Crossref/OpenAlex returns 404 for an item, keep the available metadata and continue.
 
